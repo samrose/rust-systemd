@@ -2,7 +2,7 @@ extern crate pkg_config;
 use std::env;
 
 fn main() {
-    let e = match pkg_config::find_library("libsystemd") {
+    let e = match pkg_config::find_library("systemd") {
         Ok(_) => return,
         Err(e) => e,
     };
